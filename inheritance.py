@@ -88,4 +88,8 @@ fish = Fish("Nemo")
 # fish.hunt()
 
 hawk.sleep()  
-
+rabbit.sleep()
+hawk.eat()
+hawk.hunt()
+fish.sleep()
+fish.hunt()
