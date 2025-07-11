@@ -158,4 +158,6 @@
 # square.describe()
 # triangle.describe()
 
+#Inheritance is very important in Python for OOP.
+
 
