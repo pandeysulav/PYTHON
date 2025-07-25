@@ -7,6 +7,7 @@
 
 def add_sprinkles(func):
     def wrapper():
+        print("You add sprinkles.")
         func()
     return wrapper
 
