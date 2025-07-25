@@ -30,7 +30,10 @@ class Rectangle:
             print("Height must be greater than zero")  
 
 
-rectangle = Rectangle(3, 4)
+rectangle = Rectangle(-4, 4)
+
+rectangle.width = 5
+rectangle.height = -1
 
 print(rectangle.width)
 print(rectangle.height)
