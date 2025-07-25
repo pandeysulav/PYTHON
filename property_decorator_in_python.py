@@ -25,15 +25,28 @@ class Rectangle:
     @height.setter
     def height(self, new_height):
         if new_height > 0:
-            self._width = new_height
+            self._height = new_height  # ← fixed here
         else:
             print("Height must be greater than zero")  
 
+    @width.deleter
+    def width(self):
+        del self._width
+        print("Width has been deleted.")
 
-rectangle = Rectangle(-4, 4)
+    @height.deleter
+    def height(self):
+        del self._height
+        print("Height has been deleted.")
+
+
+rectangle = Rectangle(5, 4)
 
 rectangle.width = 5
-rectangle.height = -1
+rectangle.height = 6
+
+del rectangle.width
+del rectangle.height
 
 print(rectangle.width)
 print(rectangle.height)
